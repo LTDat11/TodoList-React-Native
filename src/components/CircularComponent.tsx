@@ -7,10 +7,11 @@ interface Props {
   value: number;
   maxValue?: number;
   radius?: number;
+  titleFontSize?: number;
 }
 
 const CircularComponent = (props: Props) => {
-  let { color, value, maxValue, radius } = props;
+  let { color, value, maxValue, radius, titleFontSize } = props;
   return (
     <CircularProgress
       value={value}
@@ -18,7 +19,7 @@ const CircularComponent = (props: Props) => {
       activeStrokeColor={color ?? "#3618e0b3"}
       inActiveStrokeColor="#3C444A"
       title={`${value}%`}
-      titleFontSize={22}
+      titleFontSize={titleFontSize ?? 22}
       titleColor={"white"}
       radius={radius ?? 35}
     ></CircularProgress>

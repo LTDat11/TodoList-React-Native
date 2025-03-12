@@ -4,7 +4,6 @@ export let globalStyles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.bgColor,
-    paddingTop: Platform.OS === "ios" ? 42 : 32,
   },
   row: {
     flexDirection: "row",
