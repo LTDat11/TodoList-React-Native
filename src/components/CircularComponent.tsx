@@ -22,6 +22,7 @@ const CircularComponent = (props: Props) => {
       titleFontSize={titleFontSize ?? 22}
       titleColor={"white"}
       radius={radius ?? 35}
+      duration={1000}
     ></CircularProgress>
   );
 };

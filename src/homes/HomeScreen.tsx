@@ -22,7 +22,7 @@ import CardImageComponent from "../components/CardImageComponent";
 import AvatarGroup from "../components/AvatarGroup";
 import ProgressBarComponent from "../components/ProgressBarComponent";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }: any) => {
   return (
     <View style={{ flex: 1 }}>
       <Container>
@@ -201,7 +201,7 @@ const HomeScreen = () => {
               width: "80%",
             },
           ]}
-          onPress={() => {}}
+          onPress={() => navigation.navigate("AddNewTask")}
         >
           <TextComponent flex={0} text="Add new task"></TextComponent>
           <Add size={22} color="white" />
