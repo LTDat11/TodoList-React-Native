@@ -47,7 +47,7 @@ const HomeScreen = ({ navigation }: any) => {
         <SectionCoponent>
           <RowComponent
             styles={[globalStyles.inputContainer]}
-            onPress={() => alert("Search Component")}
+            onPress={() => navigation.navigate("SearchScreen")}
           >
             <TextComponent
               text="Search Task"
